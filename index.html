@@ -142,6 +142,54 @@
     transform: translateX(30px);
     background-color: rgb(255, 217, 0);
   }
+
+  .mainPJ{
+    margin:0 auto;
+    padding:5px 10px;
+    border-radius:10px;
+    background-color:rgb(255, 227, 150);
+    width:60%;
+    margin-bottom:100px;
+    font-weight:500;
+    padding:10px 20px;
+    box-sizing:border-box;
+    transition: 0.8s ease-in;
+    cursor:pointer;
+  }
+
+  .mainPJ:hover{
+    background-color:rgb(252, 215, 114);
+    
+  }
+  .mainPJ h2,h6{
+    margin:0;
+    text-align:center;
+  }
+  
+  .mainPJ h6{
+    color:#333333;
+    margin-bottom:-10px;
+  }
+  .mainPJ h2{
+    margin-bottom:20px;
+  }
+
+  .mainPJ p{
+    text-align:left;
+  }
+
+  .mainPJ .project{
+    font-size:0.9em;
+    font-weight:700;
+  }
+
+  .mainPJ .detail{
+    font-size:0.7em;
+  }
+  .mainPJ p::before{
+    content:"-";
+    margin-right:5px;
+  }
 </style>
 <html>
 
@@ -174,6 +222,13 @@
 
 
 
+    <div class="mainPJ">
+      <h6>[대표 프로젝트]</h6>
+      <h2>BidCast</h2>
+      <p class="project">WebRTC 기반 실시간 경매 시스템</p>  
+      <p class="detail">기술 : React, Spring Boot, Mediasoup, WebSocket, AWS</p>
+      <p class="detail">핵심 : SFU 구조 기반 다중 사용자 실시간 스트리밍 구현</p>
+    </div>
 
     <h1>HTML</h1>
     <ul>
@@ -1508,6 +1563,11 @@
     }
   });
 
+  var mainPJ = document.querySelector(".mainPJ");
+  
+  mainPJ.addEventListener("click",function(){
+    window.location.href = "finalPJ";
+  });
 
   var findList = document.querySelectorAll(".findList li a");
   var h1List = document.querySelectorAll("h1");
@@ -1538,6 +1598,7 @@
     })
   })
 
+
 const headers = document.querySelectorAll('h1');
 const menuLinks = document.querySelectorAll('ul > li > a');
 
@@ -1564,6 +1625,9 @@ function updateActiveMenu() {
     });
   }
 }
+
+
+
 
 // 스크롤 시 active 업데이트
 window.addEventListener('scroll', updateActiveMenu);
