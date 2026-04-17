@@ -5,7 +5,7 @@
 🔗 [BIDCAST 서버 GitHub](https://github.com/KR-HS/BidCast_Server)
 🔗 [BIDCAST 클라이언트 GitHub](https://github.com/KR-HS/BidCast) 
 🔗 [AWS세팅하기](AWS세팅.md) 
-🌐 [BIDCAST 홈페이지](https://bidcast.kro.kr)
+🌐 ~~[BIDCAST 홈페이지(운영종료)](https://bidcast.kro.kr)~~
 
 ---
 
